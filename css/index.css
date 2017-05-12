@@ -1,0 +1,268 @@
+/*公共css部分*/
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: "微软雅黑", arial, 'Microsoft YaHei';
+	font-size: 14px;
+	background: #fff;
+	border: 0;
+	appearance: none;
+	border-style: none;
+	outline: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+img {
+	border-style: none;
+}
+
+input,
+img {
+	vertical-align: middle;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	border: 0;
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	/*为表格设置合并边框模型*/
+	border-spacing: 0;
+}
+
+textarea {
+	resize: none;
+}
+
+
+/*禁止在ios中调整字体大小*/
+
+body {
+	-webkit-text-size-adjust: 100%!important;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+}
+
+/*简历部分css*/
+
+.warp {
+	margin: 0 auto;
+	height: 100%;
+	max-width: 1200px;
+	min-width: 320px;
+	box-sizing: border-box;
+	padding-top: 80px;
+}
+.top_title{
+	height: 80px;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	
+}
+.top_title_center{
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 80px;
+}
+.logo{
+	margin-top: 15px;
+	margin-left: 15px;
+	float: left;
+}
+.logo_name{
+	font-size: 20px;
+	margin-left: 20px;
+}
+.Navigation{
+	float: right;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+.Navigation_li{
+	padding: 0 15px;
+	color: #a4a4a4;
+	font-size: 14px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+	font-weight: 600;
+}
+.Navigation_li.current{
+	color: #333;
+}
+.Content_area{
+	padding-right: 50px;
+	height: 100%;
+	position: relative;
+}
+.icon_list{
+	float: left;
+	width: 33.33333%;
+	text-align: center;
+	margin-top: 12%;
+	cursor: pointer;
+	
+}
+.ring{
+	display: inline-block;
+	width: 210px;
+	height: 210px;
+	background: cover;
+	position: relative;
+}
+.ring_img{
+	position: absolute;
+	background: transparent;
+	left: 0;
+	top: 0;
+	
+}
+.ring_img_1{
+	animation:myfirst1 4s infinite linear;
+}
+.ring_img_2{
+	animation:myfirst2 4s infinite linear;
+}
+.ring_img_3{
+	animation:myfirst3 2s infinite linear;
+}
+.ring_img_4{
+	animation:myfirst2 6s infinite linear;
+}
+.ring_img_5{
+	animation:myfirst3 3s infinite linear;
+}
+.ring_img_6{
+	animation:myfirst1 3s infinite linear;
+}
+.ring_icon img{
+	width: 100%;
+	transition:all 1s; 
+}
+.ring_icon img:hover{
+	transform:scale(1.1) rotate(360deg); 
+}
+@keyframes myfirst1
+{
+	0%   {transform: rotateZ(0deg);}
+	25%  {transform: rotateZ(-85deg);}
+	50%  {transform: rotateZ(85deg);}
+	75%  {transform: rotateZ(-100deg);}
+	100% {transform: rotateZ(360deg);}
+}
+@keyframes myfirst2
+{
+	0%   {transform: rotateZ(0deg);}
+	25%  {transform: rotateZ(-105deg);}
+	50%  {transform: rotateZ(25deg);}
+	75%  {transform: rotateZ(-200deg);}
+	100% {transform: rotateZ(0deg);}
+}
+@keyframes myfirst3
+{
+	0%   {transform: rotateZ(0deg);}
+	50%  {transform: rotateZ(125deg);}
+	100% {transform: rotateZ(360deg);}
+}
+.ring_icon{
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -65px;
+	margin-top: -65px;
+}
+.ring_text{
+	width: 210px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+	margin: 0 auto;
+	height: 30px;
+	text-align: left;
+	
+}
+
+.nav_bar{
+	width: 50px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.nav_bar_son{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -85px;
+	width: 50px;
+	text-align: center;
+}
+.nav_bar_son>.arr{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #ccc;
+	color: #ccc;
+	display: inline-block;
+	border-radius:50% ;
+	cursor: pointer;
+	margin: 20px auto;
+}
+.nav_bar_son>.arr:hover{
+	color: #333333;
+	border: 1px solid #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
