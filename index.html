@@ -9,7 +9,15 @@
 	</head>
 
 	<body>
-		<div class="warp">
+		<div class="fixed">
+			<span class="fixed_close"></span>
+		</div>
+		<div class="img__big_warp">
+				<img src="img/2.jpg"/>
+				
+		</div>
+		
+		<div class="warp scroll" style="position:absolute; overflow:scroll; -webkit-overflow-scrolling: touch; top:0; left:0; bottom:0; right:0;">
 			<!--顶部导航开始-->
 			<div class="top_title">
 				<div class="top_title_center">
@@ -72,9 +80,9 @@
 				</ul>
 				<div class="nav_bar">
 					<div class="nav_bar_son">
-						<span class="arr">︿</span>
+						<span class="arr arr1">︿</span>
 						<span class="nums">2/2</span>
-						<span class="arr">﹀</span>
+						<span class="arr arr2">﹀</span>
 					</div>
 				</div>
 			</div>
@@ -84,5 +92,15 @@
 			<!--底部信息栏结束-->
 		</div>
 	</body>
-
 </html>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	
+	$('.icon_list').click(function(){
+		$('.fixed,.img__big_warp').show(0)
+	})
+	$('.fixed_close').click(function(){
+		$('.fixed,.img__big_warp').hide(0)
+	})
+</script>
