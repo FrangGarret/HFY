@@ -80,7 +80,6 @@ html,body{
 	top: 0;
 	left: 0;
 	z-index: 10;
-	border-bottom: 1px solid #efefef;
 	box-sizing: border-box;
 	
 }
@@ -126,7 +125,7 @@ html,body{
 	float: left;
 	width: 33.33333%;
 	text-align: center;
-	margin-top: 12%;
+	margin-top: 10%;
 	cursor: pointer;
 	
 }
