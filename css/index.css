@@ -6,11 +6,12 @@
 	list-style: none;
 	font-family: "微软雅黑", arial, 'Microsoft YaHei';
 	font-size: 14px;
-	background: #fff;
+	background: transparent;
 	border: 0;
 	-webkit-appearance: none;
 	border-style: none;
 	outline: none;
+	text-align: left;
 }
 
 .clearfix:after {
@@ -35,7 +36,7 @@ img {
 }
 
 a {
-	color: #333;
+	color: #999;
 	text-decoration: none;
 	border: 0;
 	outline: none;
@@ -62,7 +63,7 @@ html,body{
 	width: 100%;
 }
 
-/*简历部分css*/
+/*工作部分css*/
 
 .warp {
 	margin: 0 auto;
@@ -226,7 +227,7 @@ html,body{
 	width: 50px;
 	text-align: center;
 }
-.nav_bar_son>.arr{
+.arr{
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
@@ -244,7 +245,7 @@ html,body{
 .nav_bar_son>.arr2{
 	line-height: 34px;
 }
-.nav_bar_son>.arr:hover{
+.arr:hover{
 	color: #333333;
 	border: 1px solid #333333;
 }
@@ -395,6 +396,193 @@ html,body{
 		height: 30px;
 	}
 }
+
+/*简历部分*/
+.bird_warp{
+	width:288px;
+	height:190px;
+	background: url(../img/bird.png) no-repeat;
+	background-size:cover ;
+	float: left;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+.conect_text{
+	margin-left: 50px;
+	margin-top: 34px;
+	color: #ffbe00;
+	font-size: 20px;
+}
+.conect_text_1{
+	margin-left: 50px;
+}
+.conect_num{
+	color: #ffbe00;
+	font-size: 20px;
+}
+.banner_warp{
+	width: 45%;
+	float: right;
+	border: 1px solid #ccc;
+	position: relative;
+	margin-right: 10%;
+}
+._icon{
+	width: 21px;
+	height: 21px;
+	float: left;
+	margin-top: 4px;
+	margin-right: 20px;
+	background: url(../img/little.png) no-repeat;
+}
+._icon_1{
+	background-position:0 0;
+}
+._icon_2{
+	background-position:0 -21px ;
+}
+._icon_3{
+	background-position:0 -42px ;
+}
+._icon_4{
+	background-position:0 -63px ;
+}
+._icon_5{
+	background-position:0 -84px ;
+}
+._icon_6{
+	background-position:0 -105px ;
+}
+._icon_7{
+	background-position:0 -126px ;
+}
+._icon_8{
+	background-position:0 -147px ;
+}
+.resume_list_line{
+	height: 30px;
+	line-height: 30px;
+	margin-top: 20px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: left;
+}
+.top_info{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+}
+.resume_list{
+	padding: 20px;
+	width: 100%;
+}
+.resume_warp{
+	padding: 20px;
+	width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 810px) {
+	.banner_warp{
+		width: 90%;
+		margin-right: 5%;
+	}
+	.bird_warp{
+		float: none;
+		margin: 0 auto;
+		width: 144px;
+		height: 95px;
+		padding-top: 35px;
+	}
+	.wave{
+		display: none;
+	}
+	.resume_list_line{
+		margin-top: 10px;
+	}
+	.conect_text, .conect_num{
+		margin-left: 0;
+		margin-top: 0;
+		font-size: 13px;
+		text-align: center;
+	}
+	.conect_text_1{
+		margin-left: 0;
+		text-align: center;
+	}
+	
+}
+.arr_left,.arr_right{
+	position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    background: #fff;
+    cursor: pointer;
+}
+.arr_right{
+	right: -15px;
+}
+.arr_left{
+	left: -15px;
+}
+
+.wave{
+	position: fixed;
+	left: 20%;
+	bottom: 40%;
+	z-index: 13;
+}
+.work_list{
+	margin-top: 15px;
+}
+.work_list>h2{
+	font-size: 18px;
+}
+.work_title_img{
+	margin-right: 15px;
+}
+.working_time{
+	color: #666;
+	padding-left:27px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+.work_con{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.work_list_warp{
+	max-height:300px;
+	overflow: auto;
+	-webkit-overflow-scrolling:touch ;
+}
+.Skills_warp{
+	text-align: center;
+}
+.Skills{
+	width:54px;
+	height:54px;
+	display: inline-block;
+	border-radius: 50%;
+	background: #f9c029;
+	text-align: center;
+	line-height: 54px;
+	font-weight: 600;
+	margin: 10px 2%;
+}
+.Skills_2{
+	background: #f5994e;
+}
+.Skills_3{
+	background: #f0865f;
+}
+.Skills_4{
+	background: #e6736c;
+}
+
 
 
 
