@@ -426,6 +426,7 @@ html,body{
 	border: 1px solid #ccc;
 	position: relative;
 	margin-right: 10%;
+	box-sizing: border-box;
 }
 ._icon{
 	width: 21px;
