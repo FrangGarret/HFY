@@ -35,47 +35,47 @@
 			<!--内容区开始-->
 			<div class="Content_area">
 				<ul class="icon_warp">
-					<li class="icon_list">
+					<li class="icon_list" data_src="Web.html">
 						<div class="ring">
 							<img src="img/icon_1_round.png" class="ring_img ring_img_1" />
 							<div class="ring_icon"><img src="img/icon_1.jpg" /></div>
 						</div>
 						<p class="ring_text">网页设计</p>
 					</li>
-					<li class="icon_list">
+					<li class="icon_list" data_src="APP.html">
 						<div class="ring">
 							<img src="img/icon_2_round.png" class="ring_img ring_img_2" />
 							<div class="ring_icon"><img src="img/icon_2.jpg" /></div>
 						</div>
 						<p class="ring_text">APP设计</p>
 					</li>
-					<li class="icon_list">
+					<li class="icon_list" data_src="Graphic_Artist_Designer.html">
 						<div class="ring">
 							<img src="img/icon_3_round.png" class="ring_img ring_img_3" />
 							<div class="ring_icon"><img src="img/icon_3.jpg" /></div>
 						</div>
 						<p class="ring_text">平面设计</p>
 					</li>
-					<li class="icon_list">
+					<li class="icon_list" data_src="Game.html">
 						<div class="ring">
 							<img src="img/icon_4_round.png" class="ring_img ring_img_4" />
 							<div class="ring_icon"><img src="img/icon_4.jpg" /></div>
 						</div>
 						<p class="ring_text">游戏设计</p>
 					</li>
-					<li class="icon_list">
+					<li class="icon_list" data_src="H5.html">
 						<div class="ring">
 							<img src="img/icon_5_round.png" class="ring_img ring_img_5" />
 							<div class="ring_icon"><img src="img/icon_5.jpg" /></div>
 						</div>
 						<p class="ring_text">H5活动设计</p>
 					</li>
-					<li class="icon_list">
+					<li class="icon_list" data_src="banner.html">
 						<div class="ring">
 							<img src="img/icon_6_round.png" class="ring_img ring_img_6" />
 							<div class="ring_icon"><img src="img/icon_6.jpg" /></div>
 						</div>
-						<p class="ring_text">敬请期待</p>
+						<p class="ring_text">Banner设计</p>
 					</li>
 				</ul>
 				<div class="nav_bar">
@@ -99,7 +99,12 @@
 	
 	$('.icon_list').click(function(){
 		//$('.fixed,.img__big_warp').show(0)
-		window.location.href="Web.html"
+	var	url_link=$(this).attr('data_src')
+		if(url_link){
+			window.location.href=url_link
+		}else{
+			return false;
+		}
 	})
 	$('.fixed_close').click(function(){
 		$('.fixed,.img__big_warp').hide(0)
