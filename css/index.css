@@ -407,6 +407,7 @@ html,body{
 	padding-top: 50px;
 	box-sizing: border-box;
 	margin-left: 13%;
+	margin-top: 10%;
 }
 .conect_text{
 	margin-left: 50px;
@@ -533,7 +534,7 @@ html,body{
 
 .wave{
 	position: fixed;
-	left: 20%;
+	left: 28%;
 	bottom: 40%;
 	z-index: 13;
 }
