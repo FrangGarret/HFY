@@ -558,7 +558,7 @@ html,body{
 	margin-top: 10px;
 }
 .work_list_warp{
-	max-height:300px;
+	max-height:400px;
 	overflow: auto;
 	-webkit-overflow-scrolling:touch ;
 }
